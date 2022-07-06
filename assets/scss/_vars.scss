@@ -1,0 +1,21 @@
+// colors
+$clr_green: hsl(132, 100%, 65%);
+$clr_yellow: hsl(38, 100%, 65%);
+$clr_white: hsl(131, 33%, 87%);
+$clr_darkGrey_trans: hsla(127, 8%, 20%, 0.5); 
+$clr_grey: hsl(0, 0%, 47%);
+$clr_blue: hsl(251, 92%, 30%);
+
+//breakpoints
+$breakpoints: (
+  ssm: 200px,
+  sm : 576px,
+  md : 768px,
+  lg : 992px,
+);
+
+@mixin media_up ($breakpoint) {
+    @media screen and (min-width: map-get($breakpoints,$breakpoint)){
+      @content
+    }
+  }
