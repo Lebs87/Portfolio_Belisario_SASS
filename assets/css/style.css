@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700&display=swap");
-.textGreen {
-  color: #4dff70; }
-
-.bg_color {
-  background-color: #787878; }
-
 .textCenter {
   text-align: center; }
 
@@ -44,20 +38,35 @@ body nav div button.navbar-toggler:hover {
   color: #4dff70; }
 
 #circle {
-  border-radius: 50%;
-  border: solid 0.4rem;
-  color: #4dff70; }
+  border-radius: 50%; }
 
 .body {
   background-image: url(../images/realezaOscuro.jpg);
   background-attachment: fixed;
-  height: 100%;
-  color: #d3e9d7; }
+  min-height: 100vh;
+  color: #d3e9d7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
-.imgService {
-  border-radius: 10%;
+.imgGeneral {
+  border-radius: 10%; }
+
+.border_green, #circle, .imgGeneral {
   border: solid 0.4rem;
   color: #4dff70; }
+
+.page404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 100vh; }
+
+.clr_green {
+  color: #4dff70; }
+
+.clr_yellow {
+  color: #ffbe4d; }
 
 .bgColor {
   border-radius: 50%;

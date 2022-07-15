@@ -14,10 +14,10 @@ $text_light:400;
 $text_bold:700;
 
 .textGreen{
-    color: $clr_green
+    color: map-get($map: $colors, $key: green1)
 }
 .bg_color{
-	background-color: $clr_grey
+	background-color: map-get($map: $colors, $key: grey1)
 }
 .textCenter{
 	text-align: center;

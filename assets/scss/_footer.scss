@@ -1,6 +1,6 @@
 .bgColor{
     border-radius: 50%;
-    background-color: $clr_white;
+    background-color: map-get($colors,'white');
 }
 .footerP{
     margin: 0rem 1rem;
