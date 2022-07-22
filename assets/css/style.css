@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Limelight&family=Nunito+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Limelight&family=Nunito+Sans:wght@300;400;700&display=swap");
 h1,
 h2,
 h3,
@@ -10,7 +10,7 @@ h5,
   font-family: "Limelight", cursive; }
 
 p {
-  font-family: "Kalam", cursive; }
+  font-family: "ABeeZee", sans-serif; }
 
 footer p {
   font-family: "Nunito Sans", sans-serif; }
@@ -252,6 +252,9 @@ body nav div button.navbar-toggler:hover {
   background-color: #4dff70;
   border-radius: 50%;
   animation: turn1 20s linear infinite; }
+
+.disclaimer {
+  display: none; }
 
 .bgColor {
   border-radius: 50%;
