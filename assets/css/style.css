@@ -50,9 +50,6 @@ footer p {
 body nav div button.navbar-toggler:hover {
   color: #4dff70; }
 
-#circle {
-  border-radius: 50%; }
-
 .body {
   background-image: url(../../assets/images/realezaOscuro.jpg);
   background-attachment: fixed;
@@ -62,10 +59,10 @@ body nav div button.navbar-toggler:hover {
   flex-direction: column;
   justify-content: space-between; }
 
-.imgGeneral {
+.imgGeneral, .profile_main_img {
   border-radius: 10%; }
 
-.border_green, #circle, .imgGeneral {
+.border_green, .imgGeneral, .profile_main_img, #circle {
   border: solid 0.4rem;
   color: #4dff70; }
 
@@ -80,6 +77,77 @@ body nav div button.navbar-toggler:hover {
 
 .clr_yellow {
   color: #ffbe4d; }
+
+.disclaimer {
+  display: none; }
+
+.t_deco_none, .index_resalt {
+  text-decoration: none; }
+
+.index_header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center; }
+
+.index_resalt {
+  color: #d3e9d7;
+  background-position: 50% 95%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.5s;
+  margin: auto 0.15rem;
+  border-radius: 2.5rem;
+  background-image: linear-gradient(currentColor, currentColor); }
+  .index_resalt:hover {
+    color: #ffbe4d;
+    background-size: 80% 2px; }
+
+.p_icon {
+  width: 50px;
+  height: 50px;
+  background-color: #4dff70;
+  border-radius: 50%;
+  animation: turn1 20s linear infinite; }
+
+#circle {
+  border-radius: 50%; }
+
+.img_portfolio {
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  transition: 0.7s; }
+  .img_portfolio:hover {
+    box-shadow: 0 0 1px #ffbe4d, 0 0 12px #ffbe4d, 0 0 24px #ffbe4d;
+    transition-delay: 0.1s; }
+
+@media screen and (min-width: 200px) {
+  header section article div .d-flex {
+    margin-top: 3rem; } }
+
+@media screen and (min-width: 768px) {
+  header section article div .d-flex {
+    margin-top: 0rem; } }
+
+.profile_main {
+  min-height: 100vh; }
+
+.profile_main_img {
+  width: 100%; }
+  @media screen and (min-width: 200px) {
+    .profile_main_img {
+      width: 80%; } }
+  @media screen and (min-width: 576px) {
+    .profile_main_img {
+      width: 55%; } }
+  @media screen and (min-width: 768px) {
+    .profile_main_img {
+      width: 50%; } }
+  @media screen and (min-width: 992px) {
+    .profile_main_img {
+      width: 40%; } }
+  @media screen and (min-width: 1200px) {
+    .profile_main_img {
+      width: 30%; } }
 
 .header_skill {
   min-height: 100vh; }
@@ -105,28 +173,34 @@ body nav div button.navbar-toggler:hover {
   position: absolute; }
 
 .graphic-circles {
-  height: 58%;
+  height: 40%;
   aspect-ratio: 1 / 1; }
   .graphic-circles img {
     width: auto;
-    height: 58%;
+    height: 40%;
     mix-blend-mode: screen; }
+
+@media screen and (min-width: 320px) {
+  .graphic-circles {
+    height: 44%; }
+  .graphic-circles img {
+    height: 44%; }
+  .grid-skill {
+    grid-template-rows: 30vh 70vh; } }
 
 @media screen and (min-width: 380px) {
   .graphic-circles {
-    height: 70%; }
+    height: 48%; }
   .graphic-circles img {
-    height: 70%; }
-  .grid-skill {
-    grid-template-rows: 40vh 70vh; } }
+    height: 48%; } }
 
 @media screen and (min-width: 576px) {
   .graphic-circles {
-    height: 80%; }
+    height: 70%; }
   .graphic-circles img {
-    height: 80%; }
+    height: 70%; }
   .grid-skill {
-    grid-template-rows: 50vh 70vh; }
+    grid-template-rows: 45vh 70vh; }
   .div_p_skill p {
     margin: 1rem 5rem; } }
 
@@ -147,9 +221,49 @@ body nav div button.navbar-toggler:hover {
   to {
     transform: rotate(-1turn); } }
 
-.target {
+.target, .skill_img1, .skill_img2 {
   background-color: rgba(47, 55, 48, 0.5);
   border-color: #ffbe4d; }
+
+.skill_img1 {
+  width: 100%;
+  display: flex;
+  align-items: center; }
+  @media screen and (min-width: 200px) {
+    .skill_img1 {
+      width: 200px; } }
+  @media screen and (min-width: 576px) {
+    .skill_img1 {
+      width: 280px; } }
+  @media screen and (min-width: 768px) {
+    .skill_img1 {
+      width: 320px; } }
+  @media screen and (min-width: 992px) {
+    .skill_img1 {
+      width: 360px; } }
+  @media screen and (min-width: 1200px) {
+    .skill_img1 {
+      width: 400px; } }
+
+.skill_img2 {
+  width: 100%;
+  display: flex;
+  align-items: center; }
+  @media screen and (min-width: 200px) {
+    .skill_img2 {
+      width: 200px; } }
+  @media screen and (min-width: 576px) {
+    .skill_img2 {
+      width: 180px; } }
+  @media screen and (min-width: 768px) {
+    .skill_img2 {
+      width: 205px; } }
+  @media screen and (min-width: 992px) {
+    .skill_img2 {
+      width: 235px; } }
+  @media screen and (min-width: 1200px) {
+    .skill_img2 {
+      width: 260px; } }
 
 .map {
   border-radius: 5%;
@@ -222,43 +336,17 @@ body nav div button.navbar-toggler:hover {
   height: 100%;
   background: linear-gradient(360deg, transparent, #ffbe4d); }
 
-.img_portfolio {
-  border-top-left-radius: 10%;
-  border-top-right-radius: 10%; }
-  .img_portfolio:hover {
-    box-shadow: 0 0 1px #ffbe4d, 0 0 12px #ffbe4d, 0 0 24px #ffbe4d;
-    transition-delay: 0.1s; }
-
-.index_resalt {
-  text-decoration: none;
-  color: #d3e9d7;
-  background-position: 50% 95%;
-  background-repeat: no-repeat;
-  background-size: 0% 2px;
-  transition: background-size 0.5s;
-  margin: auto 0.15rem;
-  border-radius: 2.5rem;
-  background-image: linear-gradient(currentColor, currentColor); }
-  .index_resalt:hover {
-    color: #ffbe4d;
-    background-size: 80% 2px; }
-
-.t_deco_none {
-  text-decoration: none; }
-
-.p_icon {
-  width: 50px;
-  height: 50px;
-  background-color: #4dff70;
-  border-radius: 50%;
-  animation: turn1 20s linear infinite; }
-
-.disclaimer {
-  display: none; }
-
 .bgColor {
   border-radius: 50%;
-  background-color: #d3e9d7; }
+  background-color: #d3e9d7;
+  transition: 4s; }
+  .bgColor:hover {
+    transform: rotate(1turn); }
 
 .footerP {
   margin: 0rem 1rem; }
+
+@media screen and (min-width: 768px) {
+  .div_footer {
+    padding: 0rem 3rem 2rem 5rem;
+    max-width: 90vw; } }
