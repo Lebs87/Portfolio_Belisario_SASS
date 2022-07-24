@@ -1,4 +1,8 @@
-# Portfolio_Belisario_SASS
-Portfolio para trabajar con SASS
+# Proyecto de Portfolio Luis Belisario
 
-Pendiente, boton de info, tamaño skills, borde de mapa, imagenes de service.
+Saludos Lau, Espero que te encuentres bien!
+
+En la página de index, en el área de PORTFOLIO & CHALLENGUES,
+deje los últimos tres íconos con ruta a la pag 404.
+
+Gracias!
